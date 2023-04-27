@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  width: 580px;
+  height: 460px;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+/* change height */
+.container-img {
+  min-width: 290px;
+  height: 100%;
+  background-image: url("images/image-product-desktop.jpg");
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: center;
+}
+
+.description {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.description-info {
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-weight: bold;
+}
+
+.description-heading {
+  color: hsl(212, 21%, 14%);
+}
+
+.description-features {
+  color: hsl(228, 12%, 48%);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.description-discount {
+  color: hsl(158, 36%, 37%);
+  font-size: 1.5em;
+}
+.description-price {
+  margin-bottom: 10px;
+}
+.description-originalPrice {
+  bottom: 5px;
+  color: hsl(228, 12%, 48%);
+  margin-left: 1rem;
+  position: relative;
+  font-weight: bold;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.02em;
+  line-height: 5px;
+}
+
+.fontFraunces {
+  font-family: "Fraunces", serif;
+}
+
+svg {
+  margin-right: 1rem;
+}
+
+.description-button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.5em;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 540px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-img {
+    height: 40%;
+    background-image: url("images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 10%;
+  }
+
+  .container-description {
+    height: 60%;
+  }
+  .description {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
